@@ -3,10 +3,10 @@ const http = require('http')
 const Contenedor = require('./Contenedor');
 const express = require ('express')
 
-const PORT = 8080;
-const app = express();
-const server = app.listen(process.env.PORT || PORT, () => console.log(`Servidor escuchando el puerto ${PORT}`));
-server.on('error', err => console.log(`Error: ${err}`));
+// const PORT = 8080;
+// const app = express();
+// const server = app.listen(process.env.PORT || PORT, () => console.log(`Servidor escuchando el puerto ${PORT}`));
+// server.on('error', err => console.log(`Error: ${err}`));
 
 
 const productos = new Contenedor('contenedor.txt');
